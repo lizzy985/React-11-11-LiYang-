@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Table</title>
+    <script src="./eventAPI.js" defer></script>
+    <script src="./event.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="table-container">
+      <button id="addBtn">Add New Event</button>
+      <table id="table">
+        <thead>
+          <tr>
+            <th id="eventName">Event</th>
+            <th id="startTime">Start</th>
+            <th id="endTime">End</th>
+            <th id="thead-actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                </td>
+            </tr> -->
+        </tbody>
+      </table>
+      <form id="addEventForm" style="display: none;">
+        <input type="text" id="inputName" placeholder="Event Name" required />
+        <input type="date" id="inputStartDate" placeholder="Start Date" required />
+        <input type="date" id="inputEndDate" placeholder="End Date" required />
+        <button id="confirmBtn">Confirm Add</button>
+        <button id="cancelBtn">Cancel</button>
+    </form>
+    </div>
+  </body>
+</html>
